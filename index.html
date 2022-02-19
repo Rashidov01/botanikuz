@@ -16,40 +16,71 @@
 
 <body>
   <div class="hero">
-    <header class="header">
-      <div class="header__inner container">
+    <div class="container">
+      <header class="header">
         <nav class="header__nav nav">
+          <a class="nav__logo" href="./index.html">
+            <img src="icon/logo-add.png" alt="site logo" width="120" height="120">
+          </a>
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="tel:+998900000250">+998900000250</a>
+              <a class="nav__link" href="#">Home</a>
             </li>
             <li class="nav__item">
-              <p class="nav__text">г. Ташкент</p>
+              <a class="nav__link" href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Contact Us</a>
             </li>
           </ul>
         </nav>
-        <form action="">
-          <input class="nav__input" type="search" placeholder="search">
-        </form>
-      </div>
-    </header>
-    <div class="holder">
-      <div class="hero__inner container">
-        <div class="wrapper">
-          <h1 class="hero__title">BotanikUz</h1>
+        <div class="header__bookmark">
+          <a class="header__bookmark-link" href="#">
+            <img src="icon/favorite.svg" alt="telegram" width="25" height="25">
+          </a>
+          <a class="header__bookmark-link" href="#">
+            <img src="icon/shopping.svg" alt="telegram" width="25" height="25">
+          </a>
         </div>
-        <ul class="socials">
-          <li class="item">
-            <a href="">
-            <img src="icon/icons8-instagram-ios.svg" alt="instagram" width="30" height="30">
-            </a>
-          </li>
-          <li class="item">
-            <a href="">
-              <img src="icon/icons8-telegram-app-ios.svg" alt="instagram" width="30" height="30">
-            </a>
-          </li>
-        </ul>
+      </header>
+      <div class="site__hero">
+        <div class="site__hero-info hero-detail">
+          <h1 class="hero-detail__title">BotanikUz</h1>
+          <p class="hero-detail__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel impedit dolor
+            recusandae facilis dolores laboriosam voluptatum officia vitae alias sed?
+          </p>
+          <a class="hero-detail__link" href="#">more</a>
+          <ul class="site__hero-socials socials">
+            <li class="socials__item">
+              <a class="social__link" href="#">
+                <img src="icon/icons8-telegram-app-ios.svg" alt="telegram" width="30" height="30">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="social__link" href="#">
+                <img src="icon/icons8-instagram-ios.svg" alt="instagram" width="30" height="30">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site__hero-slider slider">
+          <ul class="slider__list">
+            <li class="slider__item">
+              <a class="slider__link" href="#">
+                <img class="slider__img" src="img/tree.jpeg" alt="tree img" width="600" height="400">
+              </a>
+              <!-- <div class="slider__info">
+                <button class="slider__info-btn" type="button">
+                  <img src="icon/keyboard_arrow_left.svg" alt="arrow" width="20" height="20">
+                </button>
+                <button class="slider__info-btn" type="button">
+                  <img src="icon/keyboard_arrow_right.svg" alt="arrow" width="20" height="20">
+                </button>
+              </div> -->
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

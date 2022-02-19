@@ -1,0 +1,30 @@
+.nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav__list{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo{
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.nav__item{
+  margin-right: 25px;
+}
+
+.nav__link{
+  text-decoration: none;
+  color: #505e5c;
+  font-size: 16px;
+}
+
+.header__bookmark-link{
+  margin-right: 20px;
+  text-decoration: none;
+}

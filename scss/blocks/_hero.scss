@@ -1,0 +1,61 @@
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #f1fffb 60%, #9eb3ad 40%);
+}
+
+.site__hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(15%);
+}
+
+.site__hero-info{
+  margin-right: 150px;
+}
+
+.hero-detail__title{
+  margin: 0;
+  margin-bottom: 20px;
+  // font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #505e5c;
+}
+
+.hero-detail__text{
+  margin: 0;
+  margin-bottom: 20px;
+  width: 400px;
+  line-height: 28px;
+  color: #505e5c;
+}
+
+.hero-detail__link{
+  padding: 8px 40px;
+  margin-bottom: 80px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #505e5c;
+  background-color: #9eb3ad;
+}
+
+.slider__img{
+  width: 500px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.socials{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.socials__item:not(:last-child){
+  margin-right: 20px;
+}
