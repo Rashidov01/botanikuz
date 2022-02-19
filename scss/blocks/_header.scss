@@ -1,0 +1,140 @@
+.header{
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.header__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav__list{
+  @include list-unstyled;
+  display: flex;
+  align-items: center;
+}
+
+.social{
+  @include list-unstyled;
+}
+
+.social__link{
+  text-decoration: none;
+}
+
+.nav__link{
+  color: #fff;
+}
+
+.nav__text{
+  color: #fff;
+}
+
+.nav__item{
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+
+  &::before{
+    margin-right: 15px;
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:first-child:before{
+    background-image: url(../../icon/icons8-location-ios.svg);
+    content: '';
+  }
+
+  &:last-child:before{
+    background-image: url(../../icon/icons8-phone-ios.svg);
+    content: '';
+  }
+}
+
+.nav__img{
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.nav__input{
+  width: 100%;
+  min-width: 400px;
+  background-color: transparent;
+  padding: 6px 12px;
+  outline: none;
+  color: #fff;
+  border-radius: 25px;
+  border: 1px solid #fff;
+
+  &::placeholder{
+    color: #fff;
+  }
+}
+
+.hero{
+  background-image: url(../../img/flower-img.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+}
+
+.hero__inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+}
+
+.hero__title{
+  font-size: 42px;
+  font-weight: 800;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+
+  &::before{
+    content: '';
+    background-image: url(../../icon/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 70px;
+    height: 70px;
+    margin-right: 12px;
+  }
+}
+
+.socials{
+  @include list-unstyled;
+  display: flex;
+}
+
+a, img{
+  display: inline-block;
+}
+
+.item:not(:last-child){
+  margin-right: 15px;
+}
